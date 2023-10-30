@@ -1,5 +1,5 @@
 # Project-2
-Artistic Turtle Drawing
+#Artistic Turtle Drawing
 
 import turtle
 
@@ -26,22 +26,22 @@ def draw_skull():
     skull_turtle = turtle.Turtle()
     skull_turtle.speed(0)
 
-    # head circle
+# head circle
     draw_circle(skull_turtle, 100, "white")
   
-    # Left eye ball
+ # Left eye ball
     skull_turtle.penup()
     skull_turtle.goto(-50,50)
     skull_turtle.pendown()
     draw_circle(skull_turtle,30,"black")
 
-    # left eye socket
+# left eye socket
     skull_turtle.penup()
     skull_turtle.goto(-40, 60)
     skull_turtle.pendown()
     draw_circle(skull_turtle, 15, "white")
 
-    # right eye ball
+# right eye ball
     skull_turtle.penup()
     skull_turtle.goto(50, 50)
     skull_turtle.pendown()
@@ -53,7 +53,7 @@ def draw_skull():
     skull_turtle.pendown()
     draw_circle(skull_turtle, 15, "white")
 
-    # nose hole 1
+# nose hole 1
     skull_turtle.penup()
     skull_turtle.goto(10, 15)
     skull_turtle.pendown()
