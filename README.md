@@ -8,10 +8,10 @@ drawing_bg = turtle.Turtle()
 drawing_bg.hideturtle()
 drawing_bg.speed(20)
 
-for i in range(250):
-    drawing_bg.forward(i)
-    drawing_bg.right(45)
-    drawing_bg.color("red")
+for i in range(450):
+  drawing_bg.forward(i)
+  drawing_bg.right(80)
+  drawing_bg.color("red")
   
 def draw_circle(t, radius, color):
     t.fillcolor(color)
@@ -21,7 +21,7 @@ def draw_circle(t, radius, color):
   
 def draw_skull():
     screen = turtle.Screen()
-    screen.bgcolor("yellow")
+    screen.bgcolor("blue")
 
     skull_turtle = turtle.Turtle()
     skull_turtle.speed(0)
@@ -66,7 +66,41 @@ def draw_skull():
     skull_turtle.pendown()
     draw_circle(skull_turtle, 5, "black")
 
+#jaw
+    skull_turtle.penup()
+    skull_turtle.goto(-40,9)
+    skull_turtle.pendown()
+    skull_turtle.fillcolor("white")
+    skull_turtle.begin_fill()
 
+    skull_turtle.penup()
+    skull_turtle.forward(80)
+    skull_turtle.pendown() 
+    skull_turtle.left(90)
+    skull_turtle.forward(-50)
+    skull_turtle.left(90)
+
+    skull_turtle.forward(80)
+    skull_turtle.left(90)
+    skull_turtle.forward(-50)
+    skull_turtle.left(90)
+    skull_turtle.end_fill()
+
+    skull_turtle.penup()
+    skull_turtle.goto(-30, -20)
+    skull_turtle.pendown()
+    skull_turtle.fillcolor("black")
+    skull_turtle.begin_fill()
+
+  #mouth
+    for _ in range(2):
+        skull_turtle.forward(55) 
+        skull_turtle.left(90)
+        skull_turtle.forward(10)  
+        skull_turtle.left(90)
+    skull_turtle.end_fill()
+    
+                    
     skull_turtle.hideturtle()
 
 
